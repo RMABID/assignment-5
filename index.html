@@ -12,32 +12,44 @@
 
 </head>
 <body>
-    <nav class="p-8 bg-[#F9F7F3] fixed w-full">
-        <div class="lg:w-10/12 mx-auto flex justify-between items-center">
-          <div class=""><button class="bg-[#B4F461] px-8 p-3 rounded-lg text-xl font-semibold text-black ">Blog</button></div>
-          <div class="flex justify-center space-x-3 items-center">
-            <img src="./assets/logo.png" alt="">
-            <h1 class="text-xl font-bold ">Donate Bangladesh</h1>
-          </div>
-          <div class="flex justify-center space-x-2 items-center">
-            <div><img src="./assets/coin.png" alt=""></div>
-            <div><h1 class="text-lg font-semibold "><span id="total-amount">5500</span> BDT</h1></div>
-          </div>
-        </div>
-    </nav>
+    
+  <header class=" fixed w-full mx-auto">
+         <nav class="p-8 bg-[#F9F7F3] fixed w-full">
+           <div class="lg:w-10/12 mx-auto flex justify-between items-center">
+             <div class=""><button id="blog-btn" class="bg-[#B4F461] px-8 p-3 rounded-lg text-xl font-semibold text-black ">Blog</button>
+              <button id="home-btn" class="bg-[#B4F461] px-8 p-3 hidden rounded-lg text-xl font-semibold text-black ">Home</button>
+            </div>
+             <div class="flex justify-center space-x-3 items-center">
+               <img src="./assets/logo.png" alt="">
+               <h1 class="text-xl font-bold ">Donate Bangladesh</h1>
+             </div>
+             <div class="flex justify-center space-x-2 items-center">
+               <div><img src="./assets/coin.png" alt=""></div>
+               <div><h1 class="text-lg font-semibold "><span id="total-amount">5500</span> BDT</h1></div>
+             </div>
+           </div>
+       </nav>
+     
+       <div id="page-btn" class="mt-36 fixed  flex justify-center items-center w-full mx-auto">
+
+         <div class="flex justify-center space-x-5">
+           <button id="donate-btn" class="p-4 px-8 border rounded-xl text-xl font-semibold bg-[#B4F461]">Donation</button>
+           <button id="history-button" class="p-4 px-8 border rounded-xl text-xl  font-semibold ">History</button>
+         </div>
+       
+       </div>
+  </header>
+
     <main class="w-10/12 mx-auto p-8">
-      <div class="mt-32">
-
-        <div class="flex justify-center space-x-5">
-          <button id="donate-btn" class="p-4 px-8 border rounded-xl text-xl font-semibold bg-[#B4F461]">Donation</button>
-          <button id="history-button" class="p-4 px-8 border rounded-xl text-xl  font-semibold ">History</button>
-        </div>
-
-      </div>
+      
 
       <!-- Donate Now section -->
 
-      <div id="donate-page-section" class="mt-8 space-y-8">
+      
+      <div id="donate-page-section" class="mt-8 py-48 space-y-8">
+
+        <!-- Noakhali -->
+
         <div class="lg:flex p-6 border rounded-xl bg-white justify-between items-center">
           <div class="lg:w-5/12">
             <img src="./assets/noakhali.png" alt="">
@@ -60,6 +72,9 @@
             </div>
           </div>
         </div>
+        
+        <!-- Feni, -->
+
         <div class="lg:flex lg:p-6 p-2 border rounded-xl bg-white justify-between items-center">
           <div class="lg:w-5/12">
             <img src="./assets/feni.png" alt="">
@@ -82,6 +97,9 @@
             </div>
           </div>
         </div>
+
+        <!-- Quota movement -->
+
         <div class="lg:flex lg:p-6 p-2 border rounded-xl bg-white justify-between items-center">
           <div class="lg:w-5/12">
             <img src="./assets/quota-protest.png" alt="">
@@ -108,22 +126,41 @@
 
       <!-- History section start -->
 
-      <div id="history-list" class="hidden">
+      <div id="history-list" class="pt-44 hidden">
        
       </div>
 
-      <div class="hidden">
-        <!-- You can open the modal using ID.showModal() method -->
-<button class="btn" onclick="my_modal_3.showModal()">open modal</button>
-<dialog id="my_modal_3" class="modal">
-  <div class="modal-box">
-    <form method="dialog">
-      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-    </form>
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">Press ESC key or click on ✕ button to close</p>
-  </div>
-</dialog>
+      <div id="blog-page" class="hidden mt-40 space-y-4">
+ 
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+
       </div>
 
     </main>
