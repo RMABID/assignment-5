@@ -153,6 +153,7 @@ blogButtonEl.addEventListener('click', function(){
     document.getElementById('blog-btn').classList.add('hidden');
     document.getElementById('page-btn').classList.add('hidden')
     document.getElementById('blog-page').classList.remove('hidden')
+    document.getElementById('footer-section').classList.add('hidden')
 
 
 });
@@ -162,6 +163,12 @@ homeButtonEl.addEventListener('click', function(){
     document.getElementById('donate-page-section').classList.remove('hidden');
     document.getElementById('home-btn').classList.add('hidden');
     document.getElementById('blog-btn').classList.remove('hidden');
+    document.getElementById('page-btn').classList.remove('hidden')
+    document.getElementById('blog-page').classList.add('hidden')
+    document.getElementById('footer-section').classList.remove('hidden')
+
+
+
 
 
 
