@@ -16,7 +16,7 @@ donateButtonEl.addEventListener("click", function () {
   const totalDonate = getInputTextId("donate-amount-show");
   const totalAmount = getInputTextId("total-amount");
 
-  if (inputDonateAmount <= 0 || inputDonateAmount > totalAmount || isNaN(inputDonateAmount)) {
+  if (inputDonateAmount <= 0 || inputDonateAmount > totalAmount || !isNaN(inputDonateAmount)) {
     return alert("Please chack Your Amount and Try again...!!");
   }
 
@@ -53,7 +53,7 @@ feniDonateButton.addEventListener("click", function () {
     document.getElementById("donate-feni-show").innerText
   );
 
-  if (inputDonateAmount <= 0 || inputDonateAmount > totalAmount || isNaN(inputDonateAmount)) {
+  if (inputDonateAmount <= 0 || inputDonateAmount > totalAmount || !isNaN(inputDonateAmount)) {
     return alert("Please chack Your Amount and Try again...!!");
   }
 
@@ -90,7 +90,7 @@ quotaDonateButton.addEventListener("click", function () {
     document.getElementById("donate-quota-show").innerText
   );
 
-  if (inputDonateAmount <= 0 || inputDonateAmount > totalAmount || isNaN(inputDonateAmount)) {
+  if (inputDonateAmount <= 0 || inputDonateAmount > totalAmount || !isNaN(inputDonateAmount)) {
     return alert("Please chack Your Amount and Try again...!!");
   }
 
