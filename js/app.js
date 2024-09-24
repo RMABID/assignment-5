@@ -158,6 +158,10 @@ homeButtonEl.addEventListener("click", function () {
   document.getElementById("blog-page").classList.add("hidden");
   document.getElementById("footer-section").classList.remove("hidden");
   document.getElementById("history-list").classList.add("hidden");
+  historyButton.classList.remove("bg-[#B4F461]");
+  donateButton.classList.add("bg-[#B4F461]");
+
+
 
 });
 
