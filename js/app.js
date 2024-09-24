@@ -16,7 +16,10 @@ donateButtonEl.addEventListener("click", function () {
   const totalDonate = getInputTextId("donate-amount-show");
   const totalAmount = getInputTextId("total-amount");
 
-  if (inputDonateAmount <= 0 || inputDonateAmount > totalAmount || !isNaN(inputDonateAmount)) {
+  if (
+    inputDonateAmount <= 0 ||
+    inputDonateAmount > totalAmount ||
+    isNaN(inputDonateAmount)) {
     return alert("Please chack Your Amount and Try again...!!");
   }
 
@@ -53,7 +56,11 @@ feniDonateButton.addEventListener("click", function () {
     document.getElementById("donate-feni-show").innerText
   );
 
-  if (inputDonateAmount <= 0 || inputDonateAmount > totalAmount || !isNaN(inputDonateAmount)) {
+  if (
+    inputDonateAmount <= 0 ||
+    inputDonateAmount > totalAmount ||
+    isNaN(inputDonateAmount)
+  ) {
     return alert("Please chack Your Amount and Try again...!!");
   }
 
@@ -90,7 +97,11 @@ quotaDonateButton.addEventListener("click", function () {
     document.getElementById("donate-quota-show").innerText
   );
 
-  if (inputDonateAmount <= 0 || inputDonateAmount > totalAmount || !isNaN(inputDonateAmount)) {
+  if (
+    inputDonateAmount <= 0 ||
+    inputDonateAmount > totalAmount ||
+    isNaN(inputDonateAmount)
+  ) {
     return alert("Please chack Your Amount and Try again...!!");
   }
 
@@ -134,7 +145,9 @@ donateButton.addEventListener("click", function () {
 
   document.getElementById("donate-page-section").classList.remove("hidden");
   document.getElementById("history-list").classList.add("hidden");
-  document.getElementById("footer-section").classList.remove("mt-[538px]", "lg:mt-[623px]");
+  document
+    .getElementById("footer-section")
+    .classList.remove("mt-[538px]", "lg:mt-[623px]");
 });
 
 const homeButtonEl = document.getElementById("home-btn");
@@ -159,9 +172,9 @@ homeButtonEl.addEventListener("click", function () {
   document.getElementById("history-list").classList.add("hidden");
   historyButton.classList.remove("bg-[#B4F461]");
   donateButton.classList.add("bg-[#B4F461]");
-  document.getElementById("footer-section").classList.remove("mt-[538px]", "lg:mt-[623px]");
-
-
+  document
+    .getElementById("footer-section")
+    .classList.remove("mt-[538px]", "lg:mt-[623px]");
 });
 
 // navbar scroll section
