@@ -11,10 +11,10 @@ const donateButtonEl = document.getElementById("donate-button");
 donateButtonEl.addEventListener("click", function () {
   // const totalAmount = parseFloat(document.getElementById('total-amount').innerText);
   // const inputDonateAmount = parseFloat(document.getElementById('input-donate-amount').value);
+  // const totalDonate = parseFloat(document.getElementById('donate-amount-show').innerText);
   const inputDonateAmount = getInputValueId("input-donate-amount");
   const totalDonate = getInputTextId("donate-amount-show");
   const totalAmount = getInputTextId("total-amount");
-  // const totalDonate = parseFloat(document.getElementById('donate-amount-show').innerText);
 
   if (inputDonateAmount > totalAmount || isNaN(inputDonateAmount)) {
     return alert("Please chack Your Amount and Try again...!!");
@@ -146,6 +146,8 @@ blogButtonEl.addEventListener("click", function () {
   document.getElementById("page-btn").classList.add("hidden");
   document.getElementById("blog-page").classList.remove("hidden");
   document.getElementById("footer-section").classList.add("hidden");
+  document.getElementById("history-list").classList.add("hidden");
+
 });
 
 homeButtonEl.addEventListener("click", function () {
@@ -155,6 +157,8 @@ homeButtonEl.addEventListener("click", function () {
   document.getElementById("page-btn").classList.remove("hidden");
   document.getElementById("blog-page").classList.add("hidden");
   document.getElementById("footer-section").classList.remove("hidden");
+  document.getElementById("history-list").classList.add("hidden");
+
 });
 
 // navbar scroll section
